@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+
+    
+    <link rel="stylesheet" type="text/html" href="./user/Downloads/fontawesome-free-6.1.1-web/css/all.css">
+
+	<link rel="stylesheet" href="file:///C:/Users/User/Desktop/iTins/icons/fontawesome-free-6.1.1-web/css/all.css">
+
+	<link rel="stylesheet" href="/icons/fontawesome-free-6.1.1-web/css/all.css">
+
+
+    <script src="https://kit.fontawesome.com/2bbbf54a3f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="home" id="home">
+        <main class="welcome" id="welcome">
+            <div class="images">
+                <img src="./img/background.jpg" alt="" class="sliderImages">
+                <!-- <img src="./img/image01.jpg" alt="" class="sliderImages">
+                <img src="./img/bkg04.jpeg" alt="" class="sliderImages"> -->
+            </div>
+            <!-- <header class="headingText" id="headingText">
+                <h1>
+                    <span style="color: #ff0000;">cookbox</span>  is now open 
+                </h1>
+                <p>
+                   Online food store born with a passion of making afro raw and cooked foods more accesible
+                   & reconnecting homes to the African heritage.
+                </p>
+               
+                <div class="geolocation">
+                    <button class="find-me" onclick="findMe()">Check your location <i class="fas fa-location"></i></button>
+                </div>
+            </header> -->
+            <nav>
+                <label for="logo"> Ronkky</label>
+
+                <ul class="menubar" id="menubar">
+                    <li><a href="#home" onclick="navLink()">home</a></li>
+                    <!-- <li><a href="#about" onclick="navLink()">about us</a></li> -->
+                    <li><a href="" onclick="navLink()">menu</a></li>
+                    <li><a href="" onclick="navLink()">catering</a></li>
+                    <li><a href="mailto:ogunledunoluwatobi@gmail.com" onclick="navLink()">contact</a></li>
+
+                </ul>
+
+                <!-- <i class="fas fa-location-dot location" id="" onclick="showContact()"></i></a> -->
+                <i class="fas fa-bars menu" id="showMenu" onclick="showMenu()"></i>
+                <i class="fas fa-times menu" id="hideMenu" onclick="hideMenu()"></i>
+            </nav>
+            
+
+        </main>
+        
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="container" id="container">
+
+            <div class="header">
+                <h1>about <span>us</span></h1>
+            </div>
+            <div class="aboutSection" id="aboutSection">
+                <div class="aboutImage" id="aboutImage">
+                    <img src="./img/logo01.jpg" alt="image of a dry burger containing vegetable and protein">
+                </div>
+
+                <div class="aboutText" id="aboutText">
+                    <p>
+                        Ronkky's Special is an online food store created out of a love for 
+                        leveling access to raw and cooked African foods and reuniting people with 
+                        their African ancestry.<br><br>
+                        We are committed to elevating all Nigerian cuisine to the top of the fine dining food chain.                    </p>
+                    <div class="btn" id="btn">
+                        <a href="menu.html"><button>Our Menu</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+   <section class="menu" id="menu">
+    <div class="container" id="container">
+
+        <div class="header">
+            <h1>our <span>menu</span></h1>
+        </div>
+
+        <div class="menuSection" id="menuSection">
+
+            <div class="myMenu" id="" >
+                <div class="menuImage" id="boxImage">
+                    <div class="foodOverlay"></div>
+                    <img src="./img/rice.jpg" alt="" class="foodImage">
+                </div>
+                <div class="menuDesc" id="boxDesc">
+                    <h1 class="foodTitle">naija made rice</h1>
+                    <p> Direct from our Kitchen</p>
+                </div>
+            </div>
+
+            <div class="myMenu" id="" >
+                <div class="menuImage" id="boxImage">
+                    <div class="foodOverlay"></div>
+                    <img src="./img/agoyin.jpg" alt="" class="foodImage">
+                </div>
+                <div class="menuDesc" id="boxDesc">
+                    <h1 class="foodTitle">ewa agoyin</h1>
+                    <p> Direct from our Kitchen</p>
+                </div>
+            </div>
+
+            <div class="myMenu" id="" >
+                <div class="menuImage" id="boxImage">
+                    <div class="foodOverlay"></div>
+                    <img src="./img/efo.jpg" alt="" class="foodImage">
+                </div>
+                <div class="menuDesc" id="boxDesc">
+                    <h1 class="foodTitle">efo riro soup</h1>
+                    <p> Direct from our Kitchen</p>
+                </div>
+            </div>
+
+            <div class="myMenu" id="" >
+                <div class="menuImage" id="boxImage">
+                    <div class="foodOverlay"></div>
+                    <img src="./img/bread.jpg" alt="" class="foodImage">
+                </div>
+                <div class="menuDesc" id="boxDesc">
+                    <h1 class="foodTitle">bread + beans</h1>
+                    <p> Direct from our Kitchen</p>
+                </div>
+            </div>
+
+            <div class="myMenu" id="" >
+                <div class="menuImage" id="boxImage">
+                    <div class="foodOverlay"></div>
+                    <img src="./img/beans.jpg" alt="" class="foodImage">
+                </div>
+                <div class="menuDesc" id="boxDesc">
+                    <h1 class="foodTitle">beans + plantain
+
+                    </h1>
+                    <p> Direct from our Kitchen</p>
+                </div>
+            </div>
+
+            <div class="myMenu" id="" >
+                <div class="menuImage" id="boxImage">
+                    <div class="foodOverlay"></div>
+                    <img src="./img/ayamase.jpg" alt="" class="foodImage">
+                </div>
+                <div class="menuDesc" id="boxDesc">
+                    <h1 class="foodTitle">ayamase + ofada rice</h1>
+                    <p> Direct from our Kitchen</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="menu.html"><button class="menuBtn">Explore menu</button></a>
+    </div>
+   </section>
+
+
+    <section class="order" id="order">
+        <div class="container" id="container">
+            <div class="header">
+                <h1>how <span>to</span> order</h1>
+            </div>
+
+            <div class="orderSection" id="orderSection">
+
+                <div class="orderProcedure">
+                    <div class="orderBox">
+                        <div class="image">
+                            <img src="./img/food.png" alt="">
+                        </div>
+                        <p>Choose your meal <br><br> Browse category for your meal. </p>
+                       
+                        <div class="number">
+                            <h1>1</h1>
+                        </div>
+                    </div>
+
+                    <div class="orderBox">
+                        <div class="image">
+                            <img src="./img/location.png" alt="">
+                        </div>
+                        <p>Choose a location <br><br>Select the location where you want us to deliver. </p>
+
+                        <div class="number">
+                            <h1>2</h1>
+                        </div>
+                    </div>
+
+                    <div class="orderBox">
+                        <div class="image">
+                            <img src="./img/take-away.png" alt="">
+                        </div>
+
+                        <p>Get your meal <br><br> Your order will be delivered to you in no time.</p>
+
+
+                        
+                        <div class="number">
+                            <h1>3</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="menu.html"><button onclick="showCart()">Place Your Order Now</button></a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <div class="locationSection" id="locationSection">
+        <div class="coverPicture">
+            <img src="./img/contact.jpeg" alt="">
+        </div>
+        <div class="container" id="container">
+            <div class="locationText">
+
+                <div class="findUser">
+                    <p>your location is:</p>
+                    <h1 id="findMe"></h1>
+                    <button onclick="findMe()">find your location</button>
+                </div>
+
+
+                <div class="contactIcons">
+                    <i class="fab fa-whatsapp" style="color: #68c729;"></i><a href="https://wa.me/+447475595055"> Cookbox_inc</a> <br>
+                    <i class="fab fa-instagram" style="color: #ff00ff;"></i><a href="https://www.instagram.com/Cookbox_inc">Cookbox_inc </a> <br>
+                    <i class="fab fa-facebook" style="color: blue;"></i><a href="" >Cookbox_inc</a><br>
+                    <i class="fas fa-phone" style="color: rgb(0, 183, 255);"></i><a href="tel:+447475595055" > Call Cookbox_inc</a><br>
+                    <i class="fas fa-house" style="color: rgb(255, 0, 0);"></i><a href=""> address</a>
+                </div>
+               
+            </div>
+        </div>
+        <i class="fas fa-times goBack" onclick="hideContact()"></i>
+    </div> -->
+
+
+    <footer class="footer" id="footer">
+        <div class="container" id="container">
+            <div class="footSection" id="footSection">
+                
+            </div>
+            <div class="foot_contents">
+
+                <div class="foot_content2">
+                    <h2>Contact Us</h2>
+                </div>
+
+                <div class="foot_content1">
+                    <!-- <a href="" ><i class="fab fa-facebook" style="color: blue;"></i></a> -->
+                    <a href="https://wa.me/+447735035723" ><i class="fab fa-whatsapp" style="color: #68c729;"></i></a>
+                    <a href="https://www.instagram.com/ronkkysewaagoyin" > <i class="fab fa-instagram" style="color: #ff00ff;"></i></a>  
+                </div> 
+    
+                <!-- <div class="foot_content2">
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about us</a></li>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="catering.html">catering</a></li>
+                        <li><a href="mailto:cookboxltd@yahoo.com">contact</a></li>
+                    </ul>
+                </div> -->
+            </div>
+    
+            <div class="foot_wraps">            
+                <p>
+                    All rights reserved. Copyright &copy; 2022. <a href="https://" style="color: #ADDBE3;">Tobs</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+<script src="code.js" defer></script>
+</body>
+</html>

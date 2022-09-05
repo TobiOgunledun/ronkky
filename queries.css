@@ -1,0 +1,210 @@
+@media (min-width: 992px){
+    header{
+        width: 50vw;
+    }
+    header form{
+        width: 60%;
+    }
+    .container{
+        width: 90vw;
+        height: fit-content;
+    }
+    nav{
+        top: 1em;
+        left: 0;
+        transform: translateX(2%);
+        width: 95vw;
+        margin: 0 auto;
+        border-radius: 1em;
+        background: rgba(255, 137, 76, .7);
+        backdrop-filter: blur(5px);
+    }
+    nav ul{
+        position: relative;
+        top: 0;
+        flex-direction: row;
+        background: none;
+        border: 0;
+        border-radius: 0;
+        backdrop-filter: none;
+        box-shadow: none;
+        gap: 0;
+    }
+    nav .mode{
+        padding-right: 1em;
+        display: block;
+    }
+    header h1{
+        font-size: 3.5em;
+        text-transform: uppercase;
+    }
+    header p{
+        font-size: var(--medium);
+    }
+    #showMenu, #HideMenu, nav i{
+        display: none;
+    }
+    #showMenu2, #HideMenu2, nav i{
+        display: none;
+    }
+    .location{
+        right: 0;
+    }
+    #cart2{
+        right: 2%;
+    }
+    label{
+        width: 25vw;
+    }
+    .thevid{
+       width: 50%;
+       margin: 0 auto;
+    }
+    video{
+        width: 100%;
+    }
+    header{
+        left: 30%;
+        transform: translateX(-10%);
+    }
+    .aboutSection .aboutImage, .aboutSection .aboutText{
+        width: 40%;
+    }
+    .cateringSection{
+        margin-top: 3em;
+        flex-direction: row-reverse;
+        padding-top: 2em;
+    }
+    .cateringSection .catImages{
+        width: 35%;
+    }
+    .cateringSection .catImage2{
+        width: 50%;
+    }
+    .cateringSection .catText{
+        width: 45%;
+    }
+    footer{
+        padding-top: 1em;
+
+    }
+    .foot_contents{
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    .foot_content1{
+        width: 40%;
+    }
+    aside{
+        width:45%;
+    }
+    .payment{
+        width: 45%;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+    header{
+        width: 50vw;
+    }
+    header form{
+        width: 60%;
+    }
+    nav{
+        top: 1em;
+        left: 0;
+        transform: translateX(2%);
+        width: 95vw;
+        margin: 0 auto;
+        border-radius: 1em;
+        background: rgba(255, 137, 76, .7);
+        backdrop-filter: blur(5px);
+        /* position: relative; */
+    }
+    nav ul{
+        transform: translateY(10%);
+        position: relative;
+        top: 0;
+        flex-direction: row;
+        background: none;
+        border: 0;
+        border-radius: 0;
+        backdrop-filter: none;
+        box-shadow: none;
+        padding: 0;
+        gap: 0;
+    }
+    nav a{
+        font-size: .9em;
+    }
+    header form i{
+        right: 30%;
+    }
+    #showMenu, #HideMenu, nav i{
+        display: none;
+    }
+    #showMenu2, #HideMenu2, nav i{
+        display: none;
+    }
+    .location{
+        right: 0;
+    }
+    #cart2{
+        right: 0;
+    }
+    label{
+        font-size: 1.3em;
+        width: 25vw;
+    }
+    nav .mode{
+        padding-right: 1em;
+        display: block;
+    }
+    .aboutSection .aboutImage, .aboutSection .aboutText{
+        width: 45%;
+    }
+    .thevid{
+        width: 50%;
+        margin: 0 auto;
+     }
+     video{
+         width: 100%;
+     }
+
+     header{
+        left: 30%;
+        transform: translateX(-15%);
+    }
+    .cateringSection{
+        margin-top: 3em;
+        flex-direction: row-reverse;
+        padding-top: 2em;
+    }
+    .cateringSection .catImages{
+        width: 35%;
+    }
+    .cateringSection .catImage2{
+        width: 50%;
+    }
+    .cateringSection .catText{
+        width: 45%;
+    }
+    footer{
+        padding-top: 1em;
+
+    }
+    .foot_contents{
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    .foot_content1{
+        width: 40%;
+    }
+    aside{
+        width:45%;
+    }
+    .payment{
+        width: 45%;
+    }
+}
