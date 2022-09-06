@@ -16,11 +16,13 @@
         width: 95vw;
         margin: 0 auto;
         border-radius: 1em;
-        background: rgba(255, 137, 76, .7);
+        background: rgba(255, 223, 0,.7);;
         backdrop-filter: blur(5px);
     }
     nav ul{
-        position: relative;
+        position: inherit;
+        height: inherit;
+        width: inherit;
         top: 0;
         flex-direction: row;
         background: none;
@@ -29,6 +31,7 @@
         backdrop-filter: none;
         box-shadow: none;
         gap: 0;
+        z-index: inherit;
     }
     nav .mode{
         padding-right: 1em;
@@ -67,8 +70,11 @@
         left: 30%;
         transform: translateX(-10%);
     }
-    .aboutSection .aboutImage, .aboutSection .aboutText{
-        width: 40%;
+    .aboutSection .aboutImage{
+        width: 20em;
+    }
+     .aboutSection .aboutText{
+        width: 45%;
     }
     .cateringSection{
         margin-top: 3em;
@@ -118,7 +124,7 @@
         width: 95vw;
         margin: 0 auto;
         border-radius: 1em;
-        background: rgba(255, 137, 76, .7);
+        background: rgba(255, 223, 0,.7);;
         backdrop-filter: blur(5px);
         /* position: relative; */
     }
@@ -161,7 +167,10 @@
         padding-right: 1em;
         display: block;
     }
-    .aboutSection .aboutImage, .aboutSection .aboutText{
+    .aboutSection .aboutImage{
+        width: 20em;
+    }
+     .aboutSection .aboutText{
         width: 45%;
     }
     .thevid{
