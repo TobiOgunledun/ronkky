@@ -1,9 +1,44 @@
 @media (min-width: 992px){
-    header{
-        width: 50vw;
+    main{
+        height: 35em;
+        width: 85%;
+        margin: 0 auto;
+
     }
-    header form{
-        width: 60%;
+    header{
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       gap: 1em;
+
+
+    }
+    header .images{
+        position: relative;
+        width: 40%;
+        z-index: unset;
+        border-radius: 50%;
+    }
+    header .images img{
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+    }
+    header .welcome{
+        position: relative;
+        bottom: unset;
+        left: unset;
+        width: 40%;
+        padding: 1em;
+
+    }
+    .welcome h1{
+        width: fit-content;
+        font-size: 1.2em;
+        background: #fff;
+        padding:.3em;
+        text-transform: uppercase;
     }
     .container{
         width: 90vw;
@@ -16,33 +51,30 @@
         width: 95vw;
         margin: 0 auto;
         border-radius: 1em;
-        background: rgba(255, 223, 0,.7);;
+        background: rgba(255, 255, 255, .6);
         backdrop-filter: blur(5px);
     }
     nav ul{
-        position: inherit;
-        height: inherit;
+        position: unset;
+        height: unset;
         width: inherit;
-        top: 0;
+        top: unset;
+        right: unset;
         flex-direction: row;
-        background: none;
-        border: 0;
-        border-radius: 0;
-        backdrop-filter: none;
-        box-shadow: none;
+        background: unset;
+        border: unset;
+        border-radius: unset;
+        backdrop-filter: unset;
+        box-shadow: unset;
         gap: 0;
-        z-index: inherit;
+        z-index: unset;
+    }
+    nav ul a{
+        font-size: 1.2em;
     }
     nav .mode{
         padding-right: 1em;
         display: block;
-    }
-    header h1{
-        font-size: 3.5em;
-        text-transform: uppercase;
-    }
-    header p{
-        font-size: var(--medium);
     }
     #showMenu, #HideMenu, nav i{
         display: none;
@@ -65,10 +97,6 @@
     }
     video{
         width: 100%;
-    }
-    header{
-        left: 30%;
-        transform: translateX(-10%);
     }
     .aboutSection .aboutImage{
         width: 20em;
@@ -110,13 +138,8 @@
     
 }
 
-@media (min-width: 768px) and (max-width:1024px){
-    header{
-        width: 50vw;
-    }
-    header form{
-        width: 60%;
-    }
+@media (min-width: 768px) and (max-width:992px){
+   
     nav{
         top: 1em;
         left: 0;
@@ -124,29 +147,29 @@
         width: 95vw;
         margin: 0 auto;
         border-radius: 1em;
-        background: rgba(255, 223, 0,.7);;
+        background: rgba(255, 255, 255, .6);
         backdrop-filter: blur(5px);
         /* position: relative; */
     }
     nav ul{
-        transform: translateY(10%);
-        position: relative;
-        top: 0;
+        position: unset;
+        height: unset;
+        width: inherit;
+        top: unset;
+        right: unset;
         flex-direction: row;
-        background: none;
-        border: 0;
-        border-radius: 0;
-        backdrop-filter: none;
-        box-shadow: none;
-        padding: 0;
+        background: unset;
+        border: unset;
+        border-radius: unset;
+        backdrop-filter: unset;
+        box-shadow: unset;
         gap: 0;
+        z-index: unset;
     }
-    nav a{
+    nav ul a{
         font-size: .9em;
     }
-    header form i{
-        right: 30%;
-    }
+   
     #showMenu, #HideMenu, nav i{
         display: none;
     }
@@ -181,10 +204,6 @@
          width: 100%;
      }
 
-     header{
-        left: 30%;
-        transform: translateX(-15%);
-    }
     .cateringSection{
         margin-top: 3em;
         flex-direction: row-reverse;
