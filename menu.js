@@ -88,7 +88,7 @@ for (var i = 0; i < addToCart.length; i++) {
   theButton = addToCart[i];
   theButton.addEventListener('click', addToCartClicked)
 }
-
+const foodArr = [];
 function addToCartClicked (event) {
   button = event.target;
   var cartItem = button.parentElement;
@@ -99,7 +99,8 @@ function addToCartClicked (event) {
 //   console.log(foodQuantity);
   var imageSrc = cartItem.getElementsByClassName('itemImage')[0].src;
   // console.log(imageSrc);
-  
+      
+  foodArr.push(` ${title}`)
   
   addItemToCart (title, price, imageSrc);
   updateCartPrice()
@@ -124,22 +125,25 @@ function addItemToCart (title, price, imageSrc) {
             <div class="foodOverlay"></div>
             <img src="${imageSrc}" alt="" class="cartImage">
         </div>
+        <div class="cartItem" id="cartItem">
+        <div class="cartImage" id="cartImage">
+            <div class="foodOverlay"></div>
+            <img src="${imageSrc}" alt="" class="cartImage">
+        </div>
         <div class="cartTitle" id="cartTitle">
             <h1 class="itemName">${title}</h1>
             <h2 class="cartPrice"> <i class="fas fa-sterling-sign"></i>${price}</h2>
+        
         </div>
         <button class="cancel"><i class="fas fa-times"></i></button>
     </div>
         
       `
 
-      var eachItem = document.getElementById('eachItem');
-      eachItem.append(`${title}; `)
-      console.log(eachItem);
   productRow.innerHTML = cartRowItems;
   productRows.append(productRow);
   productRow.getElementsByClassName('cancel')[0].addEventListener('click', removeItem);
-  // productRow.getElementsByClassName('itemNumber')[0].addEventListener('change', changeQuantity);
+//   productRow.getElementsByClassName('itemNumber')[0].addEventListener('change', changeQuantity);
 
   updateCartPrice()
 }
@@ -207,6 +211,7 @@ function updateCartPrice() {
     document.getElementsByClassName('subtotal')[0].innerText = subtotal;
     document.getElementsByClassName('totalPrice')[0].innerText =   total + DELIVERYFEE;
     document.getElementsByClassName('newAmount')[0].value = total + DELIVERYFEE;
+    document.getElementById("items").value = foodArr;
 
     document.getElementsByClassName('items')[0].value = listItems;
 
