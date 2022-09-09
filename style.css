@@ -53,7 +53,7 @@ main .images{
     height: 100%;
 }
 header .welcome{
-    width: 100%;
+    width: 30em;
     height: fit-content;
     margin: 0 auto;
     position: absolute;
@@ -676,19 +676,16 @@ label{
     margin-top: 2em;
     padding: 1em 0;
 }
-.cateringSection .catImages, .cateringSection .catImage2{
+.cateringSection .catImages{
     width: 100%;
-    border: 2px solid #000;
+    height: 20em;
     border-radius: 1em;
 }
-.cateringSection .catImages img, .cateringSection .catImage2 img{
+.cateringSection .catImages img{
     width: 100%;
     height: 100%;
     border-radius: 1em;
     transition: all 1s ease-in-out
-}
-.cateringSection .catImages:hover img, .cateringSection .catImage2:hover img{
-    transform: rotate(3deg) scale(.95);
 }
 .cateringSection .catText{
     width: 100%;
@@ -707,37 +704,40 @@ label{
     justify-content: flex-start;
     align-items: center;
 }
-.catText form p{
+.catText form .formInput p{
     margin-bottom: 0;
     width: 40%;
     text-align: start;
+    font-size: 1em;
 }
 .catText form input, .catText form select, .catText form textarea{
     width: 50%;
-    padding: .2em;
+    padding: .5em;
     font-size: 1.1em;
-    background: transparent;
-    color: #fff;
-    border: 1px solid transparent;
+    background: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(5px);
+    color: #000;
+    border: 1px solid #cecece;
     border-radius: .5em;
     margin-top: 0;
     text-align: start;
 }
 .catText form select{
     /* color:#000; */
-    background: #000;
+    background: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px);
     border: 0;
 }
 .catText form input[type=submit]{
     margin: 1em 0;
     text-align: center;
-    background: var(--mainColor);
+    background: #000;
+    color: #fff;
     cursor: pointer;
-    transition: all 1s ease-in-out;
+    transition: all .7s ease-in-out;
 }
 .catText form input[type=submit]:hover{
-    transform: scale(.95);
-    box-shadow: 3px 7px 25px rgba(255, 223, 0,.5);;
+    box-shadow: 3px 7px 25px rgba(0, 0, 0, .5);;
 }
 footer{
     background: #ffdf00;

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ronkkysewaagoyin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+
+    
+    <link rel="stylesheet" type="text/html" href="./user/Downloads/fontawesome-free-6.1.1-web/css/all.css">
+
+	<link rel="stylesheet" href="file:///C:/Users/User/Desktop/iTins/icons/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="/icons/fontawesome-free-6.1.1-web/css/all.css">
+
+    <script src="https://kit.fontawesome.com/2bbbf54a3f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <nav>
+        <label for="logo"> Ronkkysewaagoyin</label>
+
+        <ul class="menubar" id="menubar">
+            <li><a href="#home" onclick="navLink()">home</a></li>
+            <li><a href="menu.html" onclick="navLink()">menu</a></li>
+            <li><a href="catering.html" onclick="navLink()">services</a></li>
+            <li><a href="tel:+447735035723" onclick="navLink()">contact</a></li>
+
+        </ul>
+
+        <i class="fas fa-bars menu" id="showMenu" onclick="showMenu()"></i>
+        <i class="fas fa-times menu" id="hideMenu" onclick="hideMenu()"></i>
+    </nav>
+
+    <main>
+        <img src="./img/cat02.jpg" alt="">
+        <div class="titleText">
+            <h1 style="text-transform: uppercase; color:#fff;">
+                our <span style="color:#ffdf00"> Catering </span> Services<span style="color: #ff0000;">.</span>
+            </h1>
+        </div>
+    </main>
+
+    <section class="catering">
+        <div class="container">
+            <div class="cateringSection">
+                <div class="catText">
+                    <div class="header">
+                        <h1>why choose <span>us</span>?</h1>
+                    </div>
+                    <p>
+                        We have a team of event experts on staff who will assist you every step of the way.
+                        Our team will make certain that you can easily and affordably provide an unforgettable
+                        African dining experience for your guests.
+                    </p>
+                </div>
+                <div class="catImages">
+                    <img src="./img/cat03.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
+       
+    </section>
+    
+
+   <section class="reach">
+        <div class="container">
+            <div class="header">
+                <h1>reach <span>us</span></h1>
+            </div>
+
+            <div class="cateringSection">
+                <div class="catText">
+                    <form action="sentmail.php" method="post">
+                        <div class="formInput">
+                            <p>Name</p>
+                            <input type="text" placeholder="Fullname" name="name" required>
+                        </div>
+                        <div class="formInput">
+                            <p>Email</p>
+                            <input type="email" placeholder="cookbox@mail.com" name="email" required>
+                        </div>
+                        <div class="formInput">
+                            <p>Phone Number</p>
+                            <input type="tel" placeholder="+xx" name="tel" required>
+                        </div>
+                        <div class="formInput">
+                            <p>Date of Ocassion</p>
+                        <input type="date" name="date">
+                        </div>
+                        <div class="formInput">
+                            <p>Expected Number of Guests</p>
+                        <input type="number" min="10" placeholder="minimum of 10" name="number of guests">
+                        </div>
+                        <div class="formInput">
+                            <p>Area of Interest</p>
+                        <select name="type of ocassion" id="" name="event" required>
+                            <option value="1">Anniversary</option>
+                            <option value="2">Christening/Communion</option>
+                            <option value="3">Corporate Event</option>
+                            <option value="4">Wedding</option>
+                            <option value="5">Others</option>
+                        </select>
+                        </div>
+                        <div class="formInput">
+                            <p>Additional Information</p>
+                        <textarea name="info" id="" name="message"></textarea>
+                        </div>   
+                        <input type="submit" name="submit"> 
+                    </form>
+                </div>
+               
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="containers" id="containers">
+            <div class="footSection" id="footSection">
+                
+            </div>
+            <div class="foot_contents">
+
+                <div class="foot_content2">
+                    <h2>Contact Us</h2>
+                </div>
+
+                <div class="foot_content1">
+                    <!-- <a href="" ><i class="fab fa-facebook" style="color: blue;"></i></a> -->
+                    <a href="https://wa.me/+447735035723" ><i class="fab fa-whatsapp" style="color: #68c729;"></i></a>
+                    <a href="https://www.instagram.com/ronkkysewaagoyin" > <i class="fab fa-instagram" style="color: #ff00ff;"></i></a>  
+                </div> 
+    
+                <!-- <div class="foot_content2">
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about us</a></li>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="catering.html">catering</a></li>
+                        <li><a href="mailto:cookboxltd@yahoo.com">contact</a></li>
+                    </ul>
+                </div> -->
+            </div>
+    
+            <div class="foot_wraps">            
+                <p>
+                    All rights reserved. Copyright &copy; 2022. <a href="https://" style="color: #ff0000;">Tobs.</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="code.js" defer></script>    
+</body>
+</html>

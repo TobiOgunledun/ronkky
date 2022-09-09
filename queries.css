@@ -1,45 +1,4 @@
 @media (min-width: 992px){
-    main{
-        height: 35em;
-        width: 100%;
-        margin: 0 auto;
-
-    }
-    header{
-       width: 100%;
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-       gap: 1em;
-
-
-    }
-    header .images{
-        position: relative;
-        width: 40%;
-        z-index: unset;
-        border-radius: 50%;
-    }
-    header .images img{
-        width: 70%;
-        height: 70%;
-        border-radius: 50%;
-    }
-    header .welcome{
-        position: relative;
-        bottom: unset;
-        left: unset;
-        width: 40%;
-        padding: 1em;
-
-    }
-    .welcome h1{
-        width: fit-content;
-        font-size: 1.2em;
-        background: #fff;
-        padding:.3em;
-        text-transform: uppercase;
-    }
     .container{
         width: 90vw;
         height: fit-content;
@@ -91,13 +50,6 @@
     label{
         width: 25vw;
     }
-    .thevid{
-       width: 50%;
-       margin: 0 auto;
-    }
-    video{
-        width: 100%;
-    }
     .listSection{
         width: 80%;
         margin: 0 auto;
@@ -120,11 +72,8 @@
     .cateringSection .catImages{
         width: 35%;
     }
-    .cateringSection .catImage2{
-        width: 50%;
-    }
     .cateringSection .catText{
-        width: 45%;
+        width: 50%;
     }
     footer{
         padding-top: 1em;
@@ -148,6 +97,10 @@
 
 @media (min-width: 768px) and (max-width:992px){
    
+    .container{
+        width: 90vw;
+        height: fit-content;
+    }
     nav{
         top: 1em;
         left: 0;
@@ -157,7 +110,6 @@
         border-radius: 1em;
         background: rgba(255, 255, 255, .6);
         backdrop-filter: blur(5px);
-        /* position: relative; */
     }
     nav ul{
         position: unset;
@@ -175,9 +127,12 @@
         z-index: unset;
     }
     nav ul a{
-        font-size: .9em;
+        font-size: 1.2em;
     }
-   
+    nav .mode{
+        padding-right: 1em;
+        display: block;
+    }
     #showMenu, #HideMenu, nav i{
         display: none;
     }
@@ -188,15 +143,18 @@
         right: 0;
     }
     #cart2{
-        right: 0;
+        right: 2%;
     }
     label{
-        font-size: 1.3em;
         width: 25vw;
     }
-    nav .mode{
-        padding-right: 1em;
-        display: block;
+    .listSection{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .boxModel{
+        width: 15em;
+        height: 12em;
     }
     .aboutSection .aboutImage{
         width: 20em;
@@ -204,14 +162,6 @@
      .aboutSection .aboutText{
         width: 45%;
     }
-    .thevid{
-        width: 50%;
-        margin: 0 auto;
-     }
-     video{
-         width: 100%;
-     }
-
     .cateringSection{
         margin-top: 3em;
         flex-direction: row-reverse;
@@ -220,11 +170,8 @@
     .cateringSection .catImages{
         width: 35%;
     }
-    .cateringSection .catImage2{
-        width: 50%;
-    }
     .cateringSection .catText{
-        width: 45%;
+        width: 50%;
     }
     footer{
         padding-top: 1em;
