@@ -1,7 +1,7 @@
 @media (min-width: 992px){
     main{
         height: 35em;
-        width: 85%;
+        width: 100%;
         margin: 0 auto;
 
     }
@@ -97,6 +97,14 @@
     }
     video{
         width: 100%;
+    }
+    .listSection{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .boxModel{
+        width: 15em;
+        height: 12em;
     }
     .aboutSection .aboutImage{
         width: 20em;

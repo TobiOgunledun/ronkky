@@ -24,6 +24,7 @@ body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     width: 100vw;
+    
 }
 main{
     width: 100%;
@@ -31,19 +32,20 @@ main{
     position: relative;
     overflow: hidden;
     outline: hidden;
-    background: rgba(255, 255, 255, .4);
-    backdrop-filter: blur(3px);
+    /* background: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(3px); */
 }
 header{
     position: relative;
     width: 100%;
     height: 100%;
 }
-header .images{
+main .images{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     z-index: -1;
 }
 .images img{
@@ -51,7 +53,7 @@ header .images{
     height: 100%;
 }
 header .welcome{
-    width: 90%;
+    width: 100%;
     height: fit-content;
     margin: 0 auto;
     position: absolute;
@@ -165,17 +167,13 @@ section{
     position: absolute;
     font-size: var(--regular);
     bottom: 25%;
-    color: #cecece;
+    color: #000;
+    background: unset;
     padding: 1em;
     opacity: 0;
     transform: translateY(70vh) translateX(5%);
     animation: menu 1s ease forwards;
     animation-delay: .5s;
-}
-
-.thevid{
-    width: 100%;
-    height: fit-content;
 }
 
 
@@ -235,7 +233,7 @@ nav ul{
     box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
     border-radius: 0 0 1em 1em;
     transition: all .5s ease-in-out;
-    z-index: 9;
+    z-index: inherit;
 }
 nav li{
     padding: .5em;
@@ -303,13 +301,13 @@ nav i{
     color: var(--subColor);
     right: 10%;
     margin-right: 0;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
     z-index: 100;
 }
 #cart2 .cartQuantity{
     position: absolute;
-    top: -.5em;
-    right: 1.5em;
+    top: -.3em;
+    right: 2em;
     font-size: .8em;
     margin-right: 1em;
     background: var(--midColor);
@@ -318,6 +316,9 @@ nav i{
     border-radius: 50%;
     transform: scale(0);
     transition: all .3s ease-in-out
+}
+#cart2 a{
+    font-size: 1em;
 }
 label{
     font-size: 1.7em;
@@ -426,7 +427,9 @@ label{
 .specialsSection .specialBox:hover .text{
     top: 0;
 }
-.categoryItems{
+
+
+/* .categoryItems{
     padding: 2em 0;
     display: flex;
     flex-wrap: wrap;
@@ -447,8 +450,7 @@ label{
     color: var(--mainColor);
     box-shadow: 3px 7px 25px #ffdf00;
 
- }
-
+ } */
  .menuBtn{
      margin: 1em 0;
  }
@@ -482,7 +484,7 @@ label{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 1.5em;
     padding: 1em 0;
     position: relative;
     transition: all 1s ease-in-out;
@@ -510,32 +512,45 @@ label{
     animation-delay: .3s;
     transition: all 1s ease-in-out
 }
+
+
+.listSection{
+    width: 100%;
+
+}
+.listSection table{
+    width: 100%;
+}
+.listSection table th{
+    text-transform: uppercase;
+    text-align: start;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #cecece;
+
+}
+.listSection table td{
+    text-transform: capitalize;
+    padding: .5em 0;
+    text-align: start;
+    border-bottom: 1px solid #cecece;
+}
 .boxModel{
-    width: 20em;
-    height: 15em;
-    border-radius: 50%;
+    width: 12em;
+    height: 12em;
+    border-radius: .5em;
+    background: rgba(255, 223, 0, .8);
     box-shadow: 0 5px 10px rgba(255, 223, 0,.5);;
     position: relative;
     text-transform: capitalize;
     outline: hidden;
     overflow: hidden;
     transition: all 1s ease-in-out;
-    color: #fff;
+    color: #000;
     opacity: 0;
     transform: scale(0);
     animation: boxMenu 1s ease forwards;
     animation-delay: .3s;
     transition: all 1s ease-in-out
-}
-.boxModel h1{
-    padding-top: 1em;
-    font-size: 1.3em;
-}
-.boxModel h2{
-    display: none;
-}
-.boxModel h2 i{
-    font-size: .8em;
 }
 .boxModel .boxImage{
     position: relative;
@@ -544,9 +559,6 @@ label{
     transition: all .5s ease-in-out;
     z-index: -1;
 }
-/* .boxModel:hover .foodOverlay{
-    top: -100%;
-} */
 .boxModel .boxImage img{
     width: 100%;
     height: 100%;
@@ -559,37 +571,19 @@ label{
 .boxModel:hover .boxImage img{
     transform: scale(0.97);
 }
+.boxModel h1{
+    font-size: 1em;
+    padding: .5em 0;
+}
+.boxModel h2{
+    font-size: 1em;
+}
 .boxModel.groc{
     display: none;
 }
-/* .foodOverlay{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: rgba(0,0, 0, .2);
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    outline: hidden;
-    overflow: hidden;
-} */
-/* .boxModel .boxDesc{
-    padding: 1em;
-    position: relative;
-    outline: hidden;
-    text-transform: capitalize;
-    z-index: 1;
-} */
-.boxModel  p{
-    padding: .7em 0;
-    font-size: var(--regular);
-    display: none;
-}
 .boxModel button{
-    background: var(--mainColor);
-    padding: .4em .7em;
-    padding-right: 1.5em;
-    font-size: var(--regular);
+    background: #000;
+    padding: .3em 1.5em .3em .6em;
     border-radius: .5em;
     color: #fff;
     position: absolute;
@@ -862,13 +856,14 @@ footer .containers{
     gap: 1em;
     justify-content: center;
     align-items: top;
-    background: #000;
+    background: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px);
     z-index: 1000;
     overflow-y:scroll ;
 }
 
 aside{
-    background: rgba(220, 47, 47, .3);
+    background: rgba(255, 255, 255, .5);
     backdrop-filter: blur(5px);
     width: 100%;
     min-height: 20em;
@@ -886,6 +881,8 @@ aside .p{
     width: 100%;
     height: fit-content;
     padding: 0 1em;
+    background: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px);
 }
 .returnIcon{
     position: absolute;
@@ -994,7 +991,7 @@ aside .p{
     margin-bottom: .5em;
     margin: 0;
     font-size: var(--regular);
-    color: var(--mainColor);
+    color: #000;
     padding-left: 0;
 }
 .theForm input{
@@ -1015,23 +1012,21 @@ aside .p{
     align-items: center;
     gap: 1em;
 }
-.theForm .form-submit input[type=submit], .theForm .form-submit button{
-    width: 50%;
-    height: 5em;
+.theForm .form-submit input[type=submit]{
+    width: 80%;
     padding: .3em .5em;
     font-size: var(--regular);
     border-radius: .3em;
-    border: 2px solid var(--mainColor);
     text-transform: capitalize;
-    background: rgba(225, 47, 47, .8);
+    background: rgba(0, 0, 0, .8);
     backdrop-filter: blur(5px);
     color: var(--subColor);
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all .7s ease;
     margin: 0 auto;
 }
-.theForm .form-submit input[type=submit]:hover, .theForm .form-submit button:hover{
-    transform: scale(0.95);
+.theForm .form-submit input[type=submit]:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
 }
 .itemDetails{
     width: 100%;
